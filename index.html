@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+</head>
+<body onkeypress="user_input(event)">
+    <canvas width="512" height="512" style="border: 1px solid black" id="canvas"></canvas>
+    <div class="controls">
+        <label for="zoom_scale">Zoom amount:</label>
+        <br>
+        <input type="range" min="1" max="1000" value="5" id="zoom_amount_input" name="zoom_scale">
+        <span id="zoom_amount_output"></span>
+        <br>
+        <label for="movement_rate">Movement rate:</label>
+        <br>
+        <input type="range" min="1" max="10" value="10" id="movement_rate_input" name="movement_rate">
+        <span id="movement_rate_output"></span>
+    </div>
+</body>
+</html>
