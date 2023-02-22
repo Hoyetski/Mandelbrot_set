@@ -75,14 +75,9 @@ function draw() {
                     cy = 3 * cc - cp_y;
                     iteration++;
                 }
-    
                 c.beginPath();
                 c.rect(x, y, 1, 1); //c.rect(x * 4, y * 4, 4, 4);
-                if (x > iteration * 2 & y > iteration * 2) { // if there is no multiplication of iteration, there is a box in the bottom right corner.
-                    c.fillStyle = `rgb(${iteration * 10}, ${iteration * 5}, 0)`;
-                } else {
-                    c.fillStyle = '#000000';
-                }
+                c.fillStyle = `rgb(${iteration * 10}, ${iteration * 5}, 0)`;
                 c.fill();
         }
     }
