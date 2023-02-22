@@ -16,3 +16,5 @@ If you delete part of the code where pixels are grouped and then colored, the ar
 In order to achieve it you need to change old code like this:
 
 ![Image of my code](https://i.imgur.com/y8w00SM.png)
+
+You can find version above in second branch.
