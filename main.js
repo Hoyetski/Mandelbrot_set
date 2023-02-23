@@ -66,13 +66,13 @@ function draw() {
                 iteration = 0;
                 cp_x = -4 * x_offset + x / zoom; // cp = complex plane 
                 cp_y = -3 * y_offset + y / zoom; // cp = complex plane 
-                cx = 1; // c = composite- composite number
-                cy = 0; // c = composite- composite number                       
-    
-                while (iteration < maxIteration && (cx * cx + cy * cy) < 5) {
-                    cc = cx * cy; // c = composite 
+                cx = cp_x; // c = composite- composite number
+                cy = cp_y; // c = composite- composite number                       
+
+                while (iteration < maxIteration && (cx * cx + cy * cy) < 4) {
+                    cx_prev = cx;
                     cx = cx * cx - cy * cy + cp_x;
-                    cy = 3 * cc - cp_y;
+                    cy = 2 * cx_prev * cy + cp_y;
                     iteration++;
                 }
     
